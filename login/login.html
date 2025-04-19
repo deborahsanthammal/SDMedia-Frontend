@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
-    <link rel="stylesheet" href="signup.css">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <div class="flex-view">
@@ -15,12 +15,11 @@
                     <input type="text" placeholder="Name" name="username" id="username">
                 </li>
                 <li><input type="password" placeholder="Password" name="password" id="password"></li>
-                <li><input type="password" placeholder="confirm password" id="confirmpassword"></li>
-                <li><button onclick="handleSubmit(event,[document.getElementById('username'),document.getElementById('password'),document.getElementById('confirmpassword')] )">Sign Up</button></li>
+                <li><button onclick="handleSubmit(event,[document.getElementById('username'),document.getElementById('password')] )">Login</button></li>
             </ul>
-            <p>Already have an account? <span><a href="">Log in</a></span></p>
+            <p>Don't have an account? <span><a href="">Login</a></span></p>
         </div>
     </div>
 </body>
-<script src="signup.js"></script>
+<script src="login.js"></script>
 </html>

@@ -1,16 +1,13 @@
 function handleSubmit(event,data){
 event.preventDefault()
-if(data[1].value!==data[2].value){
-    alert("password doesnt match")
-}
-else{
-    fetch('http://192.168.1.2:8000/user/signup/',{
+
+    fetch('http://192.168.1.2:8000/user/login/',{
         method:"POST",
         headers: {
             'Content-Type': "application/json"
         },
         body:JSON.stringify({
-           username:data[0].value,
+            username:data[0].value,
             password:data[1].value
         })})
         .then(res=>res.json())
@@ -18,8 +15,8 @@ else{
         .catch(err=>console.log(err))
 }
 
-// end
-}
+
+
 
 
 
