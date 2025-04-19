@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="flex-view">
+        <div class="login-layout">
+            <h1>Create your account</h1>
+            <ul class="login-form">
+                <li>
+                    <input type="text" placeholder="Name" name="username" id="username">
+                </li>
+                <li><input type="password" placeholder="Password" name="password" id="password"></li>
+                <li><input type="password" placeholder="confirm password" id="confirmpassword"></li>
+                <li><button onclick="handleSubmit(event,[document.getElementById('username'),document.getElementById('password'),document.getElementById('confirmpassword')] )">Sign Up</button></li>
+            </ul>
+            <p>Already have an account? <span><a href="">Log in</a></span></p>
+        </div>
+    </div>
+</body>
+<script src="signup.js"></script>
+</html>
